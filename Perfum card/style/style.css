@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  ;
+}
+
+.main-container {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 8em;
+  width: 35em;
+  height: 27em;
+  border: 0.1em solid transparent;
+  border-radius: 1em;
+  justify-content: space-evenly;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.img2 {
+  display: none;
+  height: 100%;
+}
+
+
+
+.text {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.button {
+  border-color: transparent;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+  height: 3.2em;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+
+.p1 {
+  color: grey;
+  font-weight: 500;
+}
+
+.p2 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  font-family: 'Fraunces', serif;
+}
+
+.p3 {
+  font-size: 14px;
+  line-height: 1.6;
+  color: grey;
+}
+
+svg {
+  position: absolute;
+  left: 354px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+.p4 {
+  color: hsl(158, 36%, 37%);
+  font-weight: 800;
+  font-size: 35px;
+  font-family: 'Fraunces', serif;
+}
+
+.p5 {
+  padding-left: 0.8em;
+  padding-top: 12px;
+  color: grey;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 40em) {
+  .main-container {
+    flex-direction: column;
+    width: 20em;
+    height: 41em;
+  }
+
+  .img2 {
+    display: block;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 1em;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .p1 {
+    padding-top: 25px;
+    font-size: 13px;
+  }
+
+  .p2 {
+    padding-top: 15px;
+  }
+
+  .p3 {
+    padding-top: 15px;
+  }
+
+  .price {
+    padding-top: 20px;
+  }
+
+
+  .button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  svg {
+    left: 93px;
+  }
+
+}
